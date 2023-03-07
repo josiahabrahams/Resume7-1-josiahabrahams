@@ -82,13 +82,15 @@
      <footer><h2 class= "bold" >contact me </b></h2> 
         
         <form action="https://formsubmit.co/josiahabrahams1@gmail.com" method="POST">
-            
+          <input type="hidden" name="_url" value="https://yourdomain.co/contact.html">
              <label for="name" >Name:</label>
              <input type="text" name="name" pattern="[A-Za-z ]{3,}" required>
             <div class="space">
             <label for="email">Email:</label>
              <input type="email" id="email" name="email" required>
-             </div>
+             <input type="hidden" name="_autoresponse" value="thank you for submitting!">
+             <input type="hidden" name="_template" value="box">
+            </div>
             <div class="space">
              <label for="reason_for_contact"> Reason for Contact:</label>
              
@@ -103,9 +105,9 @@
              
             
                  <div class="space">
-             
-             <label type="msg"> Extra Information:</label>
-
+             <div>
+              <label type="msg"> Extra Information:</label>
+            </div>
              
              <textarea name="user_message" id="msg" placeholder="Optional"></textarea>
              </div>
